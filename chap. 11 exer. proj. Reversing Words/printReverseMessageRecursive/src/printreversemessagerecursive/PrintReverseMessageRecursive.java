@@ -1,4 +1,4 @@
-package reverseSentenceButNotReverseWords;
+package printreversemessagerecursive;
 
 import java.util.Scanner;
 
@@ -24,7 +24,9 @@ public class reverseSentenceButNotReverseWords {
     private static String getReverse(Scanner scan) {
         String nextWord;
         //code goes here
-
+        //recursive here
+        //stopping condition
+        //base case
         return null;
     } //end method getReverse
 
