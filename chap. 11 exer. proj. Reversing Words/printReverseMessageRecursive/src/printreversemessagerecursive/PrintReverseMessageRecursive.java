@@ -27,6 +27,13 @@ public class reverseSentenceButNotReverseWords {
         //recursive here
         //stopping condition
         //base case
+        
+        int index;
+       // if (!scan.isEmpty()){
+          //  index = scan.length()-1;
+          //  System.out.print(scan.charAt(index));
+          //  getReverse(scan.substring(0,index));
+      //  }
         return null;
     } //end method getReverse
 
