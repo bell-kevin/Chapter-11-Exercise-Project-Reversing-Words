@@ -1,6 +1,6 @@
 # Chapter-11-Exercise-Project-Reversing-Words
 
-Davis Technical College, Kaysville, Utah
+Davis Technical College, Kaysville, UT
 
 You saw an example of recursion to reverse a string using the Scanner in the section named “Converting from an Iterative Method to a Recursive Method”, pp. 481 – 484. Look at the method in Fig 11.7 on p. 483, where it takes the string in the Scanner object and reverses the string recursively. In this project you will use the Scanner to reverse the words in a string. When successful, the project will take “We Are Many” and return “Many Are We”.  
 
