@@ -13,7 +13,7 @@ public class reverseSentenceButNotReverseWords {
         System.out.println(getReverse(scan));
         //iterative method to reverse words in string
         System.out.println("Part 2, iterative processing");
-        getRearrange(scan);
+        getRearrange();
     } // end main method
 
     private static String getReverse(Scanner scan) {
@@ -26,7 +26,7 @@ public class reverseSentenceButNotReverseWords {
         return nextWord;
     } //end method getReverse
 
-    private static void getRearrange(Scanner scan) {
+    private static void getRearrange() {
         String sentence = "We Are Many";
         String[] splitSentence = sentence.split(" ");
         StringBuilder reversedSentence = new StringBuilder(); // using a StringBuilder for performance improvements
