@@ -8,46 +8,31 @@ public class reverseSentenceButNotReverseWords {
         System.out.println("Ch 11 Strings by Kevin Bell \n");
         String message = new String("We Are Many");
         Scanner scan = new Scanner(message);
-        String reversedMessage;
-        String rearrangedMessage;
-
         //recursive method to reverse words in string
         System.out.println("Part 1, recursive method");
-        reversedMessage = getReverse(scan);
-        System.out.println(reversedMessage);
-
+        System.out.println(getReverse(scan));
         //iterative method to reverse words in string
-        rearrangedMessage = getRearrange(scan);
-
+        System.out.println("Part 2, iterative processing");
+        getRearrange(scan);
     } // end main method
 
     private static String getReverse(Scanner scan) {
         String nextWord;
-        //code goes here
         //recursive here
-        //stopping condition
-        //base case
-        
-        int index;
-       // if (!scan.isEmpty()){
-          //  index = scan.length()-1;
-          //  System.out.print(scan.charAt(index));
-          //  getReverse(scan.substring(0,index));
-      //  }
-        return null;
+        nextWord = scan.next();
+        if (scan.hasNext()) {                             //stopping condition
+            nextWord = getReverse(scan) + " " + nextWord; //base case
+        } // end if statement
+        return nextWord;
     } //end method getReverse
 
-    private static String getRearrange(Scanner scan) {
-        //code goes here
-        String sentence;
-        sentence = "We Are Many";
+    private static void getRearrange(Scanner scan) {
+        String sentence = "We Are Many";
         String[] splitSentence = sentence.split(" ");
         StringBuilder reversedSentence = new StringBuilder(); // using a StringBuilder for performance improvements
         for (int i = splitSentence.length - 1; i >= 0; i--) { // append to StringBuilder in reverse order.
             reversedSentence.append(splitSentence[i]).append(" ");
         } // end for loop
-        System.out.println("Part 2, iterative processing");
         System.out.println(reversedSentence.toString());
-        return reversedSentence.toString();
     } // end method getRearrange
 } // end reverseSentenceButNotReverseWords class
