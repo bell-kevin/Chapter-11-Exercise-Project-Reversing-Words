@@ -1,3 +1,10 @@
+/** ****************************************************************************
+ * reverseSentenceButNotReverseWords.java
+ * Programmer: @author Kevin Bell
+ * Version: 1.0
+ * Course: SDEV 2220
+ * This program practices the use of recursion
+ **************************************************************************** */
 package printreversemessagerecursive;
 
 import java.util.Scanner;
@@ -11,6 +18,7 @@ public class reverseSentenceButNotReverseWords {
         //recursive method to reverse words in string
         System.out.println("Part 1, recursive method");
         System.out.println(getReverse(scan));
+        System.out.println();
         //iterative method to reverse words in string
         System.out.println("Part 2, iterative processing");
         getRearrange();
@@ -29,8 +37,10 @@ public class reverseSentenceButNotReverseWords {
     private static void getRearrange() {
         String sentence = "We Are Many";
         String[] splitSentence = sentence.split(" ");
-        StringBuilder reversedSentence = new StringBuilder(); // using a StringBuilder for performance improvements
-        for (int i = splitSentence.length - 1; i >= 0; i--) { // append to StringBuilder in reverse order.
+        // using a StringBuilder for performance improvements
+        StringBuilder reversedSentence = new StringBuilder();
+        // append to StringBuilder in reverse order.
+        for (int i = splitSentence.length - 1; i >= 0; i--) {
             reversedSentence.append(splitSentence[i]).append(" ");
         } // end for loop
         System.out.println(reversedSentence.toString());
